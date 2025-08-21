@@ -106,28 +106,123 @@ ret
 ```
  
 ## Output:
-<img width="1153" height="780" alt="image" src="https://github.com/user-attachments/assets/30be4b9f-c4b8-423c-a5be-f4fc4545e433" />
+
+
+
+
+<img width="1156" height="795" alt="Screenshot 2025-08-21 133149" src="https://github.com/user-attachments/assets/824f507d-a9f2-4c3a-a01c-470fd10af800" />
 
 
 ## Multiplication alp :
 ```
-mov al, 02h            ; Immediate value to multiply
-mov bx, 0200h          ; BX holds base address
-mul byte ptr [bx]      ; Based addressing (AL × [BX])
+org 100h   
+
+num DW 2521h
+mov ax,5d89h
+mul num 
+
+
 ret
+
 
 ```
  ## Output :
  
+<img width="1152" height="774" alt="Screenshot 2025-08-21 134502" src="https://github.com/user-attachments/assets/2e69c8a9-c1b6-4e1d-bd8e-af8850b687ca" />
+
+ 
  
 
 
-## Division alp 
+## Division alp:
+```
+org 100h
 
-## Output  
+num dw 5d89h
+mov bx, OFFSET num
+mov ax,8f09h
+div word ptr[bx]
+
+ret
+
+```
+
+
+
+## Output :
+<img width="1151" height="769" alt="image" src="https://github.com/user-attachments/assets/c70af26a-b921-45dd-8c7d-cfa513b5ef8f" />
+
+
+## Programs for logical  operations:
+
+## AND:
+```
+org 100h
+
+mov ax,1234h
+mov bx,4321h
+and ax,bx
+
+ret
+```
+## Output:
+
+<img width="1142" height="765" alt="image" src="https://github.com/user-attachments/assets/9724804f-0c35-4153-a027-29155bdb86b5" />
+
+
+
+## OR:
+```
+org 100h
+
+mov ax,1234h
+mov bx,4321h
+and ax,bx
+
+ret
+
+```
+
+<img width="1152" height="773" alt="image" src="https://github.com/user-attachments/assets/20d7f8ee-3639-4108-a54a-594e9fd301a4" />
+
+
+## NOT:
+```
+org 100h
+
+mov ax,5d89h
+mov bx,2521h
+not ax,bx
+
+ret
+```
+## Output:
+
+
+<img width="1151" height="770" alt="image" src="https://github.com/user-attachments/assets/0277034d-2b81-4515-ab49-d11a7d434c13" />
+
+## XOR:
+```
+org 100h
+
+mov ax,5d89h 
+mov bx,5432h
+xor ax,bx
+
+ret
+
+```
+
+## Output:
+
+<img width="1154" height="776" alt="image" src="https://github.com/user-attachments/assets/876c1391-70e1-402c-8af6-5a3d91e4e617" />
+
 
 
 ## Result :
+
+Thus the execution of ALP on fundamental arithmetic and logical operations is successfully completed.
+
  
 
 
