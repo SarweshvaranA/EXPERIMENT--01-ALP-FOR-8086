@@ -94,23 +94,25 @@ ret
 
 ## Output :
 
-<img width="1173" height="806" alt="Screenshot 2025-08-18 142145" src="https://github.com/user-attachments/assets/562de3b3-dfb7-4a13-bc8e-1d49fa5c87e6" />
+<img width="1151" height="768" alt="image" src="https://github.com/user-attachments/assets/b6f08b64-fdb2-4dca-a144-96dcfa6c1463" />
+
 
  
 ## Subtraction   of 8 bit numbers  ALP :
 ```
 org 100h
+
 mov ax, 2A34h
-sub ax, [0200h]   ;
+sub ax, 1234h
+
 ret
 ```
  
 ## Output:
 
+<img width="1152" height="767" alt="image" src="https://github.com/user-attachments/assets/da6ce90a-29e3-4976-9c20-6a4442ae842e" />
 
 
-
-<img width="1156" height="795" alt="Screenshot 2025-08-21 133149" src="https://github.com/user-attachments/assets/824f507d-a9f2-4c3a-a01c-470fd10af800" />
 
 
 ## Multiplication alp :
@@ -150,7 +152,9 @@ ret
 
 
 ## Output :
-<img width="1151" height="769" alt="image" src="https://github.com/user-attachments/assets/c70af26a-b921-45dd-8c7d-cfa513b5ef8f" />
+
+<img width="1153" height="767" alt="image" src="https://github.com/user-attachments/assets/a13f201c-191e-4819-b27f-4e904470fc3e" />
+
 
 
 ## Programs for logical  operations:
@@ -191,15 +195,14 @@ ret
 org 100h
 
 mov ax,5d89h
-mov bx,2521h
-not ax,bx
+not ax
 
 ret
 ```
 ## Output:
 
+<img width="1147" height="772" alt="image" src="https://github.com/user-attachments/assets/1f8b1e20-cfa2-485e-b330-00ad26d026b0" />
 
-<img width="1151" height="770" alt="image" src="https://github.com/user-attachments/assets/0277034d-2b81-4515-ab49-d11a7d434c13" />
 
 ## XOR:
 ```
