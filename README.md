@@ -137,14 +137,11 @@ ret
 
 ## Division alp:
 ```
-org 100h
-
-num dw 5d89h
-mov bx, OFFSET num
-mov ax,8f09h
-div word ptr[bx]
-
+mov ax,2abch
+mov bx,[1235h]
+div bx
 ret
+
 
 ```
 
@@ -152,7 +149,7 @@ ret
 
 ## Output :
 
-<img width="1153" height="767" alt="image" src="https://github.com/user-attachments/assets/a13f201c-191e-4819-b27f-4e904470fc3e" />
+<img width="1334" height="951" alt="image" src="https://github.com/user-attachments/assets/91f70c08-ae07-4ced-a120-a1ed6ad8b927" />
 
 
 
